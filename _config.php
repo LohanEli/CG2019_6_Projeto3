@@ -37,6 +37,7 @@ $T = array(
     'siteName' => 'Tilojo',
     'siteSlogan' => 'Com os pés no chão',
     'siteLogo' => '/img/logo02.png',
+    'favIcon' => '/img/logo02.png',
     'pageTitle' => '',
     'pageCSS' => '',
     'pageJS' => '',

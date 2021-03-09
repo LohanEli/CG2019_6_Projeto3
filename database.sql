@@ -41,8 +41,9 @@ INSERT INTO authors (aut_id, aut_name, aut_image, aut_email, aut_site) VALUES
 ('2', 'Joca da Silva', 'https://randomuser.me/api/portraits/lego/7.jpg', 'joca@silva.com', 'http://jocasilva.com/'),
 ('3', 'Setembrina Trocatapas', 'https://randomuser.me/api/portraits/lego/3.jpg', 'set@brina.com', 'http://setbrina.com/');
 
-INSERT INTO articles (art_image, art_title, art_intro, art_text, art_author) VALUES
+INSERT INTO articles (art_date, art_image, art_title, art_intro, art_text, art_author) VALUES
 (
+    '2021-01-12 12:15:17',
     'https://picsum.photos/198',
     'Primeiro artigo da Tilojo',
     'Este é o artigo de inauguração da nossa intranet.',
@@ -50,6 +51,7 @@ INSERT INTO articles (art_image, art_title, art_intro, art_text, art_author) VAL
     '1'
 ),
 (
+    '2021-02-17 15:16:17',
     'https://picsum.photos/199',
     'Como usar a máscara na Tilojo',
     'Aprenda a guardar, usar, descartar e reciclar suas máscaras.',
@@ -57,9 +59,18 @@ INSERT INTO articles (art_image, art_title, art_intro, art_text, art_author) VAL
     '3'
 ),
 (
+    '2021-02-28 21:22:23',
     'https://picsum.photos/200',
     'Construindo com segurança',
     'A Tilojo te ensina a não parar sua obra durante a pandemia.',
     '<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam neque culpa, vero natus asperiores reprehenderit soluta nobis exercitationem quaerat fugiat voluptates, dolore eos repellat. Doloremque blanditiis velit soluta nam odit.</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi odit consequatur nam, repellendus sapiente dicta molestias. In odit saepe dolorum et est at voluptatibus, fuga quo unde impedit, rem voluptate.</p><img src="https://picsum.photos/400/300" alt="imagem aleatória"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus minima doloribus consequatur ad itaque? Rem neque id temporibus vel, atque magnam saepe dolores consequatur consectetur odit? Optio cupiditate voluptas unde?</p><h3>Lista de links</h3><ul>    <li><a href="http://luferat.net" target="_blank">Site do Fessô</a></li>    <li><a href="http://githun.com/luferat">GitHub do fessô</a></li></ul><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nemo animi, consequatur at est modi assumenda culpa earum molestias ea. Asperiores quidem sint placeat reiciendis in architecto ut, deserunt blanditiis.</p>',
     '2'
+),
+(
+    '2021-03-10 12:00:12',
+    'https://picsum.photos/201',
+    'Artigo do Futuro',
+    'Este artigo só vai ser publicado em um futuro próximo.',
+    '<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam neque culpa, vero natus asperiores reprehenderit soluta nobis exercitationem quaerat fugiat voluptates, dolore eos repellat. Doloremque blanditiis velit soluta nam odit.</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi odit consequatur nam, repellendus sapiente dicta molestias. In odit saepe dolorum et est at voluptatibus, fuga quo unde impedit, rem voluptate.</p><img src="https://picsum.photos/400/300" alt="imagem aleatória"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus minima doloribus consequatur ad itaque? Rem neque id temporibus vel, atque magnam saepe dolores consequatur consectetur odit? Optio cupiditate voluptas unde?</p><h3>Lista de links</h3><ul>    <li><a href="http://luferat.net" target="_blank">Site do Fessô</a></li>    <li><a href="http://githun.com/luferat">GitHub do fessô</a></li></ul><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nemo animi, consequatur at est modi assumenda culpa earum molestias ea. Asperiores quidem sint placeat reiciendis in architecto ut, deserunt blanditiis.</p>',
+    '1'
 );

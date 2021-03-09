@@ -1,1 +1,36 @@
 /* CSS da index.php */
+
+.article {
+  display: flex;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  align-items: center;
+}
+
+.article img {
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin-right: 1rem;
+}
+
+.article:nth-child(even) {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.article:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.article:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.article:last-child {
+  margin-bottom: 1rem;
+}
+
+small {
+  display: block;
+  text-align: right;
+}
