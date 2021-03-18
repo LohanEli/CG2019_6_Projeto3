@@ -28,26 +28,24 @@ $conn->query('SET character_set_connection=utf8');
 $conn->query('SET character_set_client=utf8');
 $conn->query('SET character_set_results=utf8');
 
-// MySQL com nomes dos dias da semana e dos meses em português
+// MySQL com nomes de dias da semana e meses em português
 $conn->query("SET GLOBAL lc_time_names=pt_BR");
 $conn->query("SET lc_time_names = 'pt_BR'");
 
-/* Variáveis de configuração do tema ($T[]) */
-
-// Obtém configuração do tema do banco de dados
-$res = $conn->query("SELECT * FROM config");
-
-// 'Monta' variável $T[]
-while($var = $res->fetch_assoc()) {
-    
-    if (stristr($var['variable'], 'social_')) {
-        
-        // Se for uma rede social, inclui em T$['social']
-        $social = str_ireplace('social_', '', $var['variable']);
-        $T['social'][$social] = $var['value'];
-    } else {
-
-        // Outras configurações
-        $T[$var['variable']] = $var['value'];
-    }
-}
+/* Inicializa variáveis do tema */
+$T = array(
+    'siteName' => 'Tilojo',
+    'siteSlogan' => 'Com os pés no chão',
+    'fullSiteName' => 'A Tilojo',
+    'siteLogo' => '/img/logo02.png',
+    'favIcon' => '/img/logo02.png',
+    'pageTitle' => '',
+    'pageCSS' => '',
+    'pageJS' => '',
+    'social' => array(
+        'facebook' => 'https://facebook.com/tilojo',
+        'youtube' => 'https://youtube.com/tilojo',
+        'twitter' => 'https://twitter.com/tilojo',
+        'instagram' => 'https://instagram.com/tilojo'
+    )
+);

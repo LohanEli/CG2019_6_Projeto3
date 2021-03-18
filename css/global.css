@@ -178,6 +178,7 @@ footer .info div {
 footer .info div small {
     display: block;
     font-size: .7rem;
+    text-align: center;
 }
 
 /* Rodapé menu */
