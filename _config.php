@@ -45,8 +45,12 @@ while($var = $res->fetch_assoc()) {
         // Se for uma rede social, inclui em T$['social']
         $social = str_ireplace('social_', '', $var['variable']);
         $T['social'][$social] = $var['value'];
-    } else {
+    } else if (stristr($var['variable'], 'contact_')) {
 
+        // Se for um contato, inclui em T$['contact']
+        $contact = str_ireplace('contact_', '', $var['variable']);
+        $T['contact'][$contact] = $var['value'];
+    } else {
         // Outras configurações
         $T[$var['variable']] = $var['value'];
     }

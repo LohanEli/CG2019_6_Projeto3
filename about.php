@@ -12,15 +12,15 @@ require '_config.php';
 
 // Define o <title></title> desta página.
 // Deixe vazio para a 'index'.
-$T['pageTitle'] = '';
+$T['pageTitle'] = 'Sobre...';
 
 // Define as folhas de estilo desta página.
 // Deixe vazio para não usar CSS adicional nesta página.
-$T['pageCSS'] = '/css/template.css';
+$T['pageCSS'] = '';
 
 // Define o JavaScript desta página.
 // Deixe vazio para não usar JavaScript adicional nesta página.
-$T['pageJS'] = '/js/template.js';
+$T['pageJS'] = '';
 
 /* Aqui entram todos os seus códigos PHP desta página */
 
@@ -33,7 +33,7 @@ require '_header.php';
 
 <article>
 
-    <h2>Título da Página</h2>
+    <h2><?php echo $T['pageTitle'] ?></h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus numquam debitis quis doloremque
         illo ab dolorem sed, ducimus reprehenderit? Culpa nulla tempora numquam quo quae explicabo harum
         possimus cum porro?</p>

@@ -93,4 +93,7 @@ INSERT INTO config (variable, value) VALUES
 ('social_facebook', 'https://facebook.com/tilojo'),
 ('social_youtube', 'https://youtube.com/tilojo'),
 ('social_twitter', 'https://twitter.com/tilojo'),
-('social_instagram', 'https://instagram.com/tilojo');
+('social_instagram', 'https://instagram.com/tilojo'),
+('contact_phone', '(21) 9876-54321'),
+('contact_whatsapp', '(21) 9876-54321'),
+('contact_envelope', 'tilojo@tilojo.com');

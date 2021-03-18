@@ -64,3 +64,20 @@ input:valid, textarea:valid {
 .center {
     text-align: center;
 }
+
+aside ul {
+    padding: 0;
+    display: table;
+    margin: auto;
+    list-style: none;
+}
+
+aside ul li a {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+aside a:hover {
+    text-decoration: none;
+}

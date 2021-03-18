@@ -124,14 +124,35 @@ require '_header.php';
 <aside>
 
     <h3>Mais contatos</h3>
-    <p>Você pode conhecer e falar conosco por outros canais:</p>
-    <div>
-        <div>
-            
-        </div>
-        <div></div>
-    </div>
+    <p>Você pode falar conosco por outros canais:</p>
+    <ul>
+        <li><a href="#"><i class="fas fa-phone-square fa-fw fa-2x"></i>(21) 9876-54321</a></li>
+        <li><a href="#"><i class="fas fa-tools fa-fw fa-2x"></i>(21) 2345-6789</a></li>
+        <li><a href="#"><i class="fab fa-whatsapp-square fa-fw fa-2x"></i>(21) 9876-54321</a></li>
+        <li><a href="#"><i class="fas fa-envelope-square fa-fw fa-2x"></i>tilojo@tilojo.com</a></li>
+    </ul>
 
+    <h3>Redes Sociais</h3>
+    <p>Também estamos nas redes sociais:</p>
+        <!-- Menu de redes sociais -->
+        <ul>
+
+        <?php
+
+        // Lista de redes sociais $T['social']
+         foreach($T['social'] as $socialKey => $socialValue) {
+
+                // Primeira letra maiúscula
+                $SocialKey = ucfirst($socialKey);
+
+                // Gera lista de redes sociais
+                echo <<<HTML
+            <li><a href="{$socialValue}" target="_blank" title="{$T['siteName']} no {$SocialKey}."><i class="fab fa-fw fa-{$socialKey}-square fa-2x"></i><span>{$SocialKey}</span></a></li>
+HTML;
+         }
+        
+         ?>
+        </ul>
 </aside>
 
 <?php
